@@ -1,24 +1,15 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import {Heading} from "./components/Heading";
+import {Author} from "./components/Author";
+import {DateComponent} from "./components/Date";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Heading value="Heading"/>
+      <Author value="John Doe" />
+      <DateComponent value="2019-12-13T17:00:00Z" />
     </div>
   );
 }
