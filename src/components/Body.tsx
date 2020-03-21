@@ -1,11 +1,11 @@
 import React from 'react'
 
 interface Props {
-    values: string[]
+    paragraphs: string[]
 }
 
 export const Body = (props: Props) => {
     return <>
-        {props.values.map((value, index) => <p key={index}>{value}</p>)}
+        {props.paragraphs.map((value, index) => <p key={index}>{value}</p>)}
     </>
 }
