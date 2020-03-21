@@ -6,6 +6,6 @@ interface Props {
 
 export const Body = (props: Props) => {
     return <>
-        {props.values.map(value => <p>{value}</p>)}
+        {props.values.map((value, index) => <p key={index}>{value}</p>)}
     </>
 }

@@ -4,6 +4,7 @@ import {Heading} from "./components/Heading";
 import {Author} from "./components/Author";
 import {DateComponent} from "./components/Date";
 import {Body} from "./components/Body";
+import {Image} from "./components/Image";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Author value="John Doe" />
       <DateComponent value="2019-12-13T17:00:00Z" />
       <Body values={["first paragraph", "second paragraph", "third paragraph"]}/>
+      <Image />
     </div>
   );
 }
