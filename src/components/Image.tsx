@@ -6,5 +6,5 @@ interface Props {
 }
 
 export const Image = (props: Props) => {
-    return <img alt={props.imageAlt} src={props.imageUrl} />
+    return <img alt={props.imageAlt} src={props.imageUrl} className="img-fluid"/>
 }

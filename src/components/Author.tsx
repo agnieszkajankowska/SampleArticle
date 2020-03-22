@@ -5,5 +5,5 @@ interface Props {
 }
 
 export const Author = (props: Props) => (
-    <span>{props.value}</span>
+    <div className="text-muted author-name">{props.value}</div>
 )

@@ -9,5 +9,5 @@ export const Body = (props: Props) => {
     const createParagraphs = () => {
         return { __html: `${paragraphs}`}
     }
-    return <div dangerouslySetInnerHTML={createParagraphs()} />
+    return <div className="paragraphs-container" dangerouslySetInnerHTML={createParagraphs()} />
 }

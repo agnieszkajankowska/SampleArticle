@@ -5,5 +5,5 @@ interface Props {
 }
 
 export const Heading = (props: Props) => (
-    <h1>{props.value}</h1>
+    <h1 className="display-4">{props.value}</h1>
 )

@@ -1,3 +1,36 @@
 .App {
   text-align: center;
+  margin-top: 1.5rem;
+}
+
+.author-name {
+  font-size: 1.5rem;
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+}
+
+.paragraphs-container {
+  margin-top: 1.5rem;
+}
+
+.page-center {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.loader {
+  width: 5rem;
+  height: 5rem;
+}
+
+.error-message {
+  left: 0;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
 }

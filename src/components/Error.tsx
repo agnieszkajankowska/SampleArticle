@@ -1,5 +1,5 @@
 import React from 'react';
 
 export const Error = () => (
-    <div className="error-container">Something went wrong...</div>
+    <div className="error-message">Something went wrong...</div>
 )

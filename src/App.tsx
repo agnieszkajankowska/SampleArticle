@@ -4,12 +4,13 @@ import {Article, IArticle} from "./components/Article";
 import axios from 'axios';
 import {Error} from "./components/Error";
 import {Loader} from "./components/Loader";
+import { Container } from 'reactstrap';
 
 const App = () => {
     const [article, setArticle] = useState<IArticle | null>(null);
     const [isError, setIsError] = useState<boolean>(false);
     //Preparation to fetch articles basing on article id
-    const [query, setQuery] = useState<string>('fa9519d5-0363-4b8d-8e1f-627d802c08a8');
+    const [query] = useState<string>('fa9519d5-0363-4b8d-8e1f-627d802c08a8');
 
     useEffect(() => {
         const fetchData = async () => {
@@ -40,13 +41,13 @@ const App = () => {
         fetchData();
     }, [query]);
 
-    return <>
+    return <Container>
         {isError ? <Error/> :
             article !== null ?
                 <Article data={article}/> :
                 <Loader/>
         }
-    </>
+    </Container>
 }
 
 export default App;

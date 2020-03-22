@@ -1,5 +1,6 @@
 import React from 'react';
+import {Spinner} from "reactstrap";
 
 export const Loader = () => (
-    <div className="loader-container">Loading article...</div>
+    <Spinner className="loader page-center" type="grow" color="dark" />
 )
