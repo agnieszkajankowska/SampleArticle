@@ -15,11 +15,18 @@ interface FormattedTextElement {
     values: string[]
 }
 
+interface ImageElement {
+    elementType: string,
+    value: string,
+    title: string
+}
+
 export interface IArticle {
-    heading: TextElement,
-    author: TextElement,
-    body: FormattedTextElement,
-    date: TextElement
+    heading?: TextElement,
+    author?: TextElement,
+    body?: FormattedTextElement,
+    date?: TextElement,
+    image?: ImageElement
 }
 
 interface Props {
@@ -27,12 +34,12 @@ interface Props {
 }
 
 export const Article = (props: Props) => {
-    const {heading, author, date, body} = props.data;
+    const {heading, author, date, body, image} = props.data;
     return <div className="App">
         {heading && <Heading value={heading.value}/>}
         {author && <Author value={author.value}/>}
         {date && <DateComponent value={date.value}/>}
         {body && <Body paragraphs={body.values}/>}
-        <Image/>
+        {image && <Image imageUrl={image.value} imageAlt={image.title}/>}
     </div>
 }
