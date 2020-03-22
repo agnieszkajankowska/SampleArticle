@@ -18,7 +18,6 @@ const App = () => {
                 const url = `https://my12.content-cms.com/api/859f2008-a40a-4b92-afd0-24bb44d10124/delivery/v1/content/${query}`;
                 const baseUrl = 'https://my12.content-cms.com/api/859f2008-a40a-4b92-afd0-24bb44d10124';
                 const result = await axios(url);
-
                 const article = {...result.data.elements};
 
                 // Lines 23-29 are a facilitation that I assumed for this exercise.
