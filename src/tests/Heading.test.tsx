@@ -1,6 +1,6 @@
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import {Heading} from '../components/Heading';
+import { mount } from 'enzyme';
+import { Heading } from '../components/Heading';
 
 
 it('renders the header of the article', () => {
@@ -10,5 +10,6 @@ it('renders the header of the article', () => {
     }
     const heading = mount(<Heading value={props.value}/>);
     expect(heading.find('h1').length).toBe(1);
+    expect(heading.find('h1').text()).toContain('heading example');
 });
 
