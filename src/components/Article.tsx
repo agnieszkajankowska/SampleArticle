@@ -27,11 +27,12 @@ interface Props {
 }
 
 export const Article = (props: Props) => {
+    const {heading, author, date, body} = props.data;
     return <div className="App">
-        <Heading value={props.data.heading.value}/>
-        <Author value={props.data.author.value}/>
-        <DateComponent value={props.data.date.value}/>
-        <Body paragraphs={props.data.body.values}/>
+        {heading && <Heading value={heading.value}/>}
+        {author && <Author value={author.value}/>}
+        {date && <DateComponent value={date.value}/>}
+        {body && <Body paragraphs={body.values}/>}
         <Image/>
     </div>
 }
