@@ -2,7 +2,6 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { Heading } from '../components/Heading';
 
-
 it('renders the header of the article', () => {
     const props = {
         elementType: 'text',
