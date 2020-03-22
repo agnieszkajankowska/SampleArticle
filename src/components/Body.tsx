@@ -5,7 +5,9 @@ interface Props {
 }
 
 export const Body = (props: Props) => {
-    return <>
-        {props.paragraphs.map((value, index) => <p key={index}>{value}</p>)}
-    </>
+    const paragraphs = props.paragraphs.join("");
+    const createParagraphs = () => {
+        return { __html: `${paragraphs}`}
+    }
+    return <div dangerouslySetInnerHTML={createParagraphs()} />
 }

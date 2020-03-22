@@ -7,8 +7,8 @@ it('renders the author of the article', () => {
         elementType: 'text',
         value: 'John Doe'
     }
-    const heading = mount(<Author value={props.value}/>);
-    expect(heading.find('span').length).toBe(1);
-    expect(heading.find('span').text()).toContain('John Doe');
+    const author = mount(<Author value={props.value}/>);
+    expect(author.find('span').length).toBe(1);
+    expect(author.find('span').text()).toContain('John Doe');
 });
 

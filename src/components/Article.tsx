@@ -2,8 +2,8 @@ import React from 'react';
 import {Heading} from "./Heading";
 import {Author} from "./Author";
 import {DateComponent} from "./DateComponent";
-import {Body} from "./Body";
 import {Image} from "./Image";
+import {Body} from "./Body";
 
 interface TextElement {
     elementType: string,
